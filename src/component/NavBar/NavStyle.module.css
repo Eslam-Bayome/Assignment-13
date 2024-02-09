@@ -1,0 +1,11 @@
+a {
+  font-weight: 600 !important;
+  color: white !important;
+  font-size: 20px !important;
+  padding: 20px 15px;
+}
+
+nav {
+  background-color: var(--main-color);
+  min-width: 70px;
+}

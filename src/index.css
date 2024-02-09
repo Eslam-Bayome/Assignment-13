@@ -1,13 +1,121 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+:root {
+  --main-color: #2c3e50;
+  --background-color: #1abc9c;
+}
+
+footer {
+  background: var(--main-color);
+}
+
+.last {
+  background-color: #1a252f;
+}
+
+.iconContainer i {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 17px;
+}
+
+#Home,
+#About,
+#NotFound {
+  background-color: var(--background-color);
+  width: 100%;
+  height: 90vh;
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  background-color: white;
+  width: 100px;
+  height: 5px;
+}
+
+#About {
+  text-align: center;
+  color: white;
+}
+#About .row {
+  width: 1000px;
+  text-align: start;
+}
+#Portfolio,
+#Contact {
+  width: 100%;
+  height: 90vh;
+  margin-top: 100px;
+  text-align: center;
+  color: var(--main-color);
+}
+#Portfolio h2,
+#Contact h2 {
+  font-weight: 700 !important;
+  font-size: 40px !important;
+}
+#Portfolio .line,
+#Contact .line {
+  background-color: var(--main-color);
+}
+#Portfolio .overlay {
+  position: absolute;
+  font-size: 80px;
+  color: white;
+  top: 50%;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1abc9c92;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+#Portfolio .img-container:hover .overlay {
+  opacity: 1;
+}
+
+#Contact .firstLine {
+  margin-bottom: 100px;
+}
+#Contact form {
+  width: 800px;
+  margin: auto;
+}
+#Contact form input {
+  border-top: none;
+  margin-bottom: 50px;
+}
+#Contact form button {
+  display: flex;
+}
+
+.active {
+  background-color: var(--background-color);
+  border-radius: 5px;
 }
